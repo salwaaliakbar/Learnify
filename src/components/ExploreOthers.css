@@ -1,0 +1,38 @@
+.h1heading{
+    text-align: center;
+    margin-top: 80px;
+}
+h3{
+    text-align: center;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+.images img{
+    width: 80%;
+    height: 100px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1024px){
+    .images{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 768px){
+    .images{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .h1heading{
+        text-align: center;
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}

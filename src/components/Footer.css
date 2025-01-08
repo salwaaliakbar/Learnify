@@ -1,0 +1,26 @@
+.footer{
+    height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+.copyright{
+    color: rgb(74, 73, 73);
+    text-align: center;
+}
+.icons{
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.icons:hover{
+    bottom: 10px; 
+    transition: 0.35s ease-out;
+}
+hr{
+    margin-left: 3%;
+    margin-right: 3%;
+}

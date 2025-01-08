@@ -1,0 +1,55 @@
+.checkout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.checkoutContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+.checkoutContent input, .checkoutContent select {
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.checkoutContent select{
+    width: 86%;
+}
+
+.OrderDetailbtn{
+    width: 130px;
+    height: 40px;
+    margin-left: 18px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: white;
+    background-color: #eda144;
+    border: 3px solid #da9136;
+    border-radius: 5px;
+}
+.OrderDetailbtn:hover{
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    background-color:#9b621c;
+}
+@media only screen and (max-width: 768px){
+    .checkoutContent {
+        width: 70%;
+    }
+    .OrderDetailbtn{
+        width: 110px;
+    }
+}

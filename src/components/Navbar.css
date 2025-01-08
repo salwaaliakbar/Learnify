@@ -1,0 +1,232 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+}
+
+.logo {
+    margin-top: 30px;
+    margin-left: 15px;
+    color: #eda144;
+    font-size: 45px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    margin-top: 20px;
+    display: flex;
+    font-size: 22px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+nav ul li a:hover {
+    padding-bottom: 5px;
+    border-bottom: solid 3px #eda144;
+    gap: 5px;
+    cursor: pointer;
+    color: #eda144;
+}
+
+.searchbarContainer {
+    display: flex;
+}
+
+.searchbar {
+    margin-top: 30px;
+    height: 20px;
+    width: 400px;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    box-shadow: 0 1px 5px rgb(163, 160, 160);
+    margin-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchIcon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 610px;
+    top: 35px;
+    cursor: pointer;
+}
+
+.loginbutton {
+    color: black;
+    background-color: #eda144;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #eda144;
+    border: 3px solid #da9136;
+    border-radius: 30px;
+}
+
+.loginbutton:hover {
+    transition: 0.3s ease-out;
+    background-color: #9b621c;
+}
+
+.userMenu {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 85%;
+    right: 15%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdownMenu a,
+.dropdownMenu button {
+    display: block;
+    padding: 5px 15px;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.dropdownMenu a:hover,
+.dropdownMenu button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-out;
+}
+
+.hamburger {
+    display: none;
+    font-size: 20px;
+    margin-right: -30px;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .searchbar {
+        display: none;
+    }
+
+    .searchIcon {
+        display: none
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .loginbutton {
+        width: 100%;
+        max-width: 120px;
+        height: 45px;
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    .dropdownMenu {
+        right: 10%;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .searchbar {
+        display: none;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .loginbutton {
+        width: 100%;
+        max-width: 120px;
+        height: 45px;
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    ul.notactive {
+        display: none;
+    }
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color:#eda144;
+        color: white;
+        padding: 10px 0;
+        z-index: 1000;
+        text-align: left;
+    }
+    .loginbutton{
+        margin-top: 18px;
+    }
+}
