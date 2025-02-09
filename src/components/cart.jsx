@@ -1,4 +1,4 @@
-import './Cart.css';
+import './cart.css';
 import emptyCart from '../assets/images/emptyCart.jpg';
 import Navbar from './Navbar';
 import Allcourses from './Allcourses';
