@@ -18,17 +18,20 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Remove node_modules and package-lock.json
+        run: rm -rf node_modules package-lock.json
+
       - name: Clear npm cache
         run: npm cache clean --force
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Verify Installed Packages
         run: npm list
 
       - name: Build the Project
-        run: npm run build  # Vite will generate files in the 'dist' directory
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
