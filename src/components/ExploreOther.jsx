@@ -1,7 +1,7 @@
 import './ExploreOthers.css';
 import Coursera from '../assets/images/coursera.png';
 import Udemy from '../assets/images/udemy.png';
-import LinkdlenLearning from '../assets/images/LinkdlenLearning.png';
+import LinkdlenLearning from '../assets/images/inkdlenLearning.png';
 import EDX from '../assets/images/edx.webp'
 
 function ExploreOthers (){
